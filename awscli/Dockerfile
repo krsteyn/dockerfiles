@@ -17,4 +17,4 @@ RUN apk --no-cache add \
 		echo 'aws_secret_access_key = $AMAZON_SECRET_ACCESS_KEY'; \
 	} > /root/.aws/config
 
-ENTRYPOINT [ "aws" ]
+ENTRYPOINT [ "aws-shell" ]
